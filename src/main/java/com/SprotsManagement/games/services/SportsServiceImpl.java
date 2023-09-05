@@ -25,6 +25,7 @@ public class SportsServiceImpl implements SportsService {
     public SportsDto addSports(SportsDto sportsDto) {
         Sports sports = mapToEntity(sportsDto);
         Sports save = sportsRepository.save(sports);
+        System.out.println(save);
         return mapToDto(save);
     }
 

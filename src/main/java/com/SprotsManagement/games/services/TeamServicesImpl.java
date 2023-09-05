@@ -76,13 +76,16 @@ public class TeamServicesImpl implements TeamServices {
         return teamDto;
     }
     TeamsDtoReturn mapToTeamDtoReturn(Teams teams){
+        System.out.println(teams);
         TeamsDtoReturn dtoReturn = new TeamsDtoReturn();
         dtoReturn.setId(teams.getId());
         dtoReturn.setTeamName(teams.getTeamName());
         dtoReturn.setCity(teams.getCity());
         dtoReturn.setSportsName(teams.getSportsName());
         dtoReturn.setNoOfPlayers(teams.getNoOfPlayers());
+        System.out.println(dtoReturn);
 //        modelMapper.map(teams, dtoReturn);
+
         return dtoReturn;
     }
 }
