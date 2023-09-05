@@ -83,9 +83,6 @@ public class TeamServicesImpl implements TeamServices {
         dtoReturn.setCity(teams.getCity());
         dtoReturn.setSportsName(teams.getSportsName());
         dtoReturn.setNoOfPlayers(teams.getNoOfPlayers());
-        System.out.println(dtoReturn);
-//        modelMapper.map(teams, dtoReturn);
-
         return dtoReturn;
     }
 }
